@@ -92,3 +92,13 @@ Ask the user before doing any of the following:
 ## Pending Decisions
 
 - None before starting Home Gate 1.
+
+## Link to Figma pages
+
+- Home (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=130-139&t=xnAzovBudwMnMA8C-11)
+- About (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=1-7&t=xnAzovBudwMnMA8C-11)
+- Biblioteche Pagina Archivio (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=1-5&t=xnAzovBudwMnMA8C-11)
+- Biblioteche Pagina Singola (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=77-43&t=xnAzovBudwMnMA8C-11)
+- Corsi Pagina Archivio (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=75-39&t=xnAzovBudwMnMA8C-11)
+- Corsi Pagina Singola (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=25-153&t=xnAzovBudwMnMA8C-11)
+- Insegnanti Pagina Singola (https://www.figma.com/design/uBzStbljuzeVDnnOEAYz8l/Gruppo-Education--Copy-?node-id=77-111&t=xnAzovBudwMnMA8C-11)

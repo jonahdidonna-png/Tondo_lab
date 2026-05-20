@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alessia Romano | Tondo-lab</title>
+    <meta name="description" content="Profilo e agenda di Alessia Romano, insegnante verificata Tondo-lab per UX/UI e servizi pubblici.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="theme-courses teacher-page">
+    <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+    <header class="site-header" data-site-header><div class="site-header__inner"><a class="site-brand" href="index.html" aria-label="Tondo-lab Home">Tondo-lab</a><button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle__line"></span><span class="nav-toggle__line"></span></button><nav class="site-nav" id="site-nav" aria-label="Navigazione principale" data-site-nav><a class="nav-pill" href="corsi.html" aria-current="page">Corsi</a><a class="nav-pill" href="biblioteche.html">Biblioteche</a><a class="nav-pill" href="about.html">About</a><a class="nav-pill nav-pill--button" href="login.html">Login</a></nav></div></header>
+    <main id="contenuto">
+      <article class="teacher-profile">
+        <header class="teacher-hero">
+          <div class="teacher-hero__visual">
+            <div class="teacher-hero__media">
+              <img src="assets/professore1.webp" alt="Foto di Alessia Romano">
+            </div>
+            <p class="page-kicker">Insegnante verificata</p>
+          </div>
+          <div>
+            <h1>Alessia Romano</h1>
+            <p>
+              Service designer e facilitatrice UX/UI. Con Tondo-lab porta strumenti digitali
+              dentro biblioteche accessibili, con lezioni brevi, pratiche e senza pressione scolastica.
+            </p>
+            <div class="tag-list tag-list--compact"><span>UX research</span><span>Prototipazione</span><span>Servizi pubblici</span></div>
+          </div>
+        </header>
+
+        <section class="teacher-content" aria-labelledby="agenda-title">
+          <div>
+            <h2 id="agenda-title">Agenda disponibilità</h2>
+            <p class="section-lead">Scegli uno slot: ogni lezione indica luogo, orario, posti e stato di disponibilità.</p>
+            <div class="calendar" data-calendar>
+              <button class="calendar-slot is-selected" type="button" data-slot-button data-slot-id="slot-ux">
+                <span>24 mag</span><strong>UX/UI per servizi pubblici</strong><small>9:00-10:30 · Braidense · 15 posti</small>
+              </button>
+              <button class="calendar-slot" type="button" data-slot-button data-slot-id="slot-figma">
+                <span>28 mag</span><strong>Introduzione a Figma</strong><small>18:00-19:30 · Valvassori · 8 posti</small>
+              </button>
+              <button class="calendar-slot calendar-slot--low" type="button" data-slot-button data-slot-id="slot-test">
+                <span>4 giu</span><strong>Test rapido con utenti</strong><small>17:30-19:00 · Sormani · 3 posti</small>
+              </button>
+              <button class="calendar-slot calendar-slot--full" type="button" disabled>
+                <span>10 giu</span><strong>Wireframe di gruppo</strong><small>Completo</small>
+              </button>
+            </div>
+          </div>
+
+          <aside class="slot-panel" data-slot-panel aria-live="polite">
+            <p class="page-kicker">Slot selezionato</p>
+            <h2 data-slot-title>UX/UI per servizi pubblici</h2>
+            <p data-slot-detail>Sabato 24 maggio, 9:00-10:30, Biblioteca Braidense. 15 posti disponibili.</p>
+            <button class="button button--wide" type="button" data-booking-trigger data-booking-label="UX/UI per servizi pubblici con Alessia Romano">Prenota questo slot</button>
+            <p class="booking-status" aria-live="polite"></p>
+          </aside>
+        </section>
+
+        <section class="faq-section" aria-labelledby="faq-title">
+          <h2 id="faq-title">Domande frequenti</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button type="button" aria-expanded="false" data-accordion-trigger>Serve esperienza?</button>
+              <div class="faq-panel"><p>No. Gli slot sono pensati per partire da esempi pratici e arrivare a un piccolo risultato condiviso.</p></div>
+            </div>
+            <div class="faq-item">
+              <button type="button" aria-expanded="false" data-accordion-trigger>Cosa succede dopo il corso?</button>
+              <div class="faq-panel"><p>Ricevi materiali, una traccia di recap e la richiesta di feedback per migliorare le prossime lezioni.</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="site-footer__brand"><img class="site-footer__logo" src="assets/logo-tondo-lab-hero.svg" alt="Tondo-lab"><p>Il sapere che gira</p><div class="social-links" aria-label="Canali social"><a href="about.html" aria-label="Instagram">Ig</a><a href="about.html" aria-label="TikTok">Tk</a><a href="about.html" aria-label="Facebook">Fb</a></div></div><nav class="site-footer__nav" aria-label="Navigazione footer"><div><h2>Scopri</h2><a href="corsi.html">Corsi</a><a href="biblioteche.html">Biblioteche</a><a href="about.html">About</a></div><div><h2>Aiuto</h2><a href="corso-ux-ui.html">Prenota un corso</a><a href="insegnante-alessia.html">Agenda insegnante</a><a href="biblioteca-braidense.html">Spazi attivabili</a><a href="about.html#contatti">Contatti</a></div><div><h2>Legali</h2><a href="about.html">Privacy</a><a href="about.html">Termini</a><a href="about.html">Accessibilità</a></div></nav><p class="site-footer__copyright">Copyright: © 2026 Tondo-lab - Tutti i diritti riservati.</p></footer>
+  </body>
+</html>

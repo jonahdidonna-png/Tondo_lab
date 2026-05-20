@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Tondo-lab</title>
+    <meta name="description" content="Accedi o registrati a Tondo-lab, il servizio che mette in circolo studenti, insegnanti e biblioteche.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="theme-auth">
+    <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+    <header class="site-header" data-site-header>
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Tondo-lab Home">Tondo-lab</a>
+        <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navigazione principale" data-site-nav>
+          <a class="nav-pill" href="corsi.html">Corsi</a>
+          <a class="nav-pill" href="biblioteche.html">Biblioteche</a>
+          <a class="nav-pill" href="about.html">About</a>
+          <a class="nav-pill nav-pill--button" href="login.html" aria-current="page">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenuto" class="auth-page">
+      <div class="auth-layout">
+        <section class="auth-copy" aria-labelledby="auth-title">
+          <p class="page-kicker">Area personale</p>
+          <h1 id="auth-title">Entra nel giro.</h1>
+          <p>
+            Tieni traccia dei corsi prenotati, salva le biblioteche che ami e proponi nuove lezioni
+            quando hai qualcosa da condividere.
+          </p>
+        </section>
+
+        <div class="auth-panel" aria-label="Accesso e registrazione">
+          <form class="auth-form" data-fake-form data-form-kind="login">
+            <div>
+              <h2>Accedi</h2>
+              <p>Riprendi il tuo percorso Tondo-lab.</p>
+            </div>
+            <div class="form-row">
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="login-password">Password</label>
+              <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+            </div>
+            <button class="button" type="submit">Entra</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+
+          <form class="auth-form auth-form--register" data-fake-form data-form-kind="register">
+            <div>
+              <h2>Registrati</h2>
+              <p>Un profilo leggero per imparare, insegnare o attivare spazi.</p>
+            </div>
+            <div class="form-row">
+              <label for="register-name">Nome</label>
+              <input id="register-name" name="nome" autocomplete="given-name" required>
+            </div>
+            <div class="form-row">
+              <label for="register-email">Email</label>
+              <input id="register-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="register-password">Password</label>
+              <input id="register-password" name="password" type="password" autocomplete="new-password" required>
+            </div>
+            <button class="button" type="submit">Crea profilo</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

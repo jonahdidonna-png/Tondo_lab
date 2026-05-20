@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About | Tondo-lab</title>
+    <meta name="description" content="La visione di Tondo-lab: biblioteche, studenti e insegnanti in una conoscenza circolare.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="theme-about">
+    <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+    <header class="site-header" data-site-header>
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Tondo-lab Home">Tondo-lab</a>
+        <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navigazione principale" data-site-nav>
+          <a class="nav-pill" href="corsi.html">Corsi</a>
+          <a class="nav-pill" href="biblioteche.html">Biblioteche</a>
+          <a class="nav-pill" href="about.html" aria-current="page">About</a>
+          <a class="nav-pill nav-pill--button" href="login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenuto">
+      <section class="about-hero" aria-labelledby="about-title">
+        <img class="about-hero__image" src="assets/about-hero-circolarita.svg" alt="">
+        <div class="about-hero__content">
+          <div class="about-orbit" aria-label="Tripla circolarità">
+            <span class="about-orbit__node about-orbit__node--student">Studenti</span>
+            <span class="about-orbit__node about-orbit__node--teacher">Insegnanti</span>
+            <span class="about-orbit__node about-orbit__node--library">Biblioteche</span>
+          </div>
+          <div class="about-hero__text">
+            <h1 id="about-title">Siamo Tondo-lab. La piattaforma che si basa sulla conoscenza circolare</h1>
+            <p>
+              La Tripla Circolarità nasce dall'incontro tra tre esigenze complementari:
+              biblioteche con spazi da attivare, insegnanti che cercano luoghi in cui condividere
+              competenze e studenti che vogliono ambienti stimolanti in cui apprendere.
+            </p>
+          </div>
+        </div>
+        <div class="proposal-strip">
+          <h2>La nostra proposta</h2>
+          <p>Offriamo lezioni brevi e concentrate, progettate per dare un risultato concreto.</p>
+          <p>Gli insegnanti condividono esperienza e gli studenti ritrovano motivazione in un ambiente senza giudizi.</p>
+          <p>La biblioteca diventa un punto vivo di connessione tra risorse, curiosità e partecipazione.</p>
+        </div>
+        <div class="objective-block">
+          <h2>Il nostro obiettivo</h2>
+          <p>
+            Diventare il punto di riferimento per una società dove la conoscenza non è un peso individuale,
+            ma una forza collettiva capace di sbloccare il potenziale di ogni persona.
+          </p>
+        </div>
+      </section>
+
+      <section class="section team-section" aria-labelledby="team-title">
+        <div class="section__inner">
+          <h2 id="team-title" class="section-title">Tondo team</h2>
+          <div class="team-grid">
+            <article class="team-card" data-href="insegnante-alessia.html" aria-label="Apri il profilo di Alessia"><img class="team-card__photo" src="assets/professore1.webp" alt="Foto di Alessia"><h3>Alessia</h3></article>
+            <article class="team-card"><img class="team-card__photo" src="assets/professore2.jpg" alt="Foto di Chiara"><h3>Chiara</h3></article>
+            <article class="team-card"><img class="team-card__photo" src="assets/professore3.webp" alt="Foto di Laura"><h3>Laura</h3></article>
+            <article class="team-card" data-show-more-item="team" hidden><img class="team-card__photo" src="assets/professore5.jpeg" alt="Foto di Simone"><h3>Simone</h3></article>
+            <article class="team-card" data-show-more-item="team" hidden><img class="team-card__photo" src="assets/professore6.jpg" alt="Foto di Giacomo"><h3>Giacomo</h3></article>
+            <article class="team-card" data-show-more-item="team" hidden><img class="team-card__photo" src="assets/professore7.png" alt="Foto di Sara"><h3>Sara</h3></article>
+          </div>
+          <div class="section-action">
+            <button
+              class="button"
+              type="button"
+              data-show-more-button
+              data-show-more-target="team"
+              data-show-more-collapsed-extra-tablet="1"
+              data-show-more-expanded-text="Mostra meno insegnanti ↑"
+            >
+              Mostra altri insegnanti ↓
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section join-section" id="contatti" aria-labelledby="about-contact-title">
+        <div class="section__inner join-grid">
+          <div class="join-copy">
+            <h2 id="about-contact-title">Vuoi unirti al nostro team?</h2>
+            <p>Compila il modulo accanto e ti risponderemo appena possibile. Se sai già che corso vorresti proporre, specificalo nel form.</p>
+          </div>
+          <form class="contact-form" data-fake-form data-form-kind="join">
+            <div class="form-row"><label for="about-name">Nome*</label><input id="about-name" name="nome" required></div>
+            <div class="form-row"><label for="about-surname">Cognome*</label><input id="about-surname" name="cognome" required></div>
+            <div class="form-row"><label for="about-phone">Telefono*</label><input id="about-phone" name="telefono" required></div>
+            <div class="form-row"><label for="about-object">Oggetto</label><input id="about-object" name="oggetto"></div>
+            <div class="form-row"><label for="about-message">Messaggio*</label><textarea id="about-message" name="messaggio" rows="5" required></textarea></div>
+            <button class="button" type="submit">Invia</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="assets/logo-tondo-lab-hero.svg" alt="Tondo-lab">
+        <p>Il sapere che gira</p>
+        <div class="social-links" aria-label="Canali social"><a href="about.html" aria-label="Instagram">Ig</a><a href="about.html" aria-label="TikTok">Tk</a><a href="about.html" aria-label="Facebook">Fb</a></div>
+      </div>
+      <nav class="site-footer__nav" aria-label="Navigazione footer">
+        <div><h2>Scopri</h2><a href="corsi.html">Corsi</a><a href="biblioteche.html">Biblioteche</a><a href="about.html">About</a></div>
+        <div><h2>Aiuto</h2><a href="corso-ux-ui.html">Prenota un corso</a><a href="insegnante-alessia.html">Agenda insegnante</a><a href="biblioteca-braidense.html">Spazi attivabili</a><a href="about.html#contatti">Contatti</a></div>
+        <div><h2>Legali</h2><a href="about.html">Privacy</a><a href="about.html">Termini</a><a href="about.html">Accessibilità</a></div>
+      </nav>
+      <p class="site-footer__copyright">Copyright: © 2026 Tondo-lab - Tutti i diritti riservati.</p>
+    </footer>
+  </body>
+</html>
