@@ -1952,6 +1952,27 @@
   }
 
   @media (max-width: 1023px) {
+    body.nav-open {
+      position: fixed;
+      top: var(--nav-lock-offset, 0);
+      right: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    body.nav-open .site-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    body.nav-open .site-nav {
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+
     .about-hero__image {
       opacity: .7;
     }

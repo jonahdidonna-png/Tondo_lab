@@ -6,11 +6,35 @@ function initMobileNav() {
     return;
   }
 
+  let lockedScrollY = 0;
+
+  const lockScroll = () => {
+    lockedScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+    document.body.style.setProperty("--nav-lock-offset", `-${lockedScrollY}px`);
+  };
+
+  const unlockScroll = () => {
+    const restoreScrollY = lockedScrollY;
+    document.body.style.removeProperty("--nav-lock-offset");
+    lockedScrollY = 0;
+    window.scrollTo(0, restoreScrollY);
+  };
+
   const setOpen = (isOpen) => {
+    const wasOpen = document.body.classList.contains("nav-open");
+
+    if (isOpen && !wasOpen) {
+      lockScroll();
+    }
+
     toggle.setAttribute("aria-expanded", String(isOpen));
     toggle.setAttribute("aria-label", isOpen ? "Chiudi menu" : "Apri menu");
     nav.classList.toggle("is-open", isOpen);
     document.body.classList.toggle("nav-open", isOpen);
+
+    if (!isOpen && wasOpen) {
+      unlockScroll();
+    }
   };
 
   toggle.addEventListener("click", () => {
@@ -25,7 +49,7 @@ function initMobileNav() {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && nav.classList.contains("is-open")) {
       setOpen(false);
       toggle.focus();
     }
